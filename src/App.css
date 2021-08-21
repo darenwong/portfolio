@@ -39,4 +39,5 @@
 }
 
 html {
+  scroll-behavior: smooth;
 }
