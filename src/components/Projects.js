@@ -19,6 +19,7 @@ import myPortfolioImage from "../image/portfolio.JPG";
 import LinkIcon from "@material-ui/icons/Link";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import YouTubeIcon from "@material-ui/icons/YouTube";
 const LazyLoad = React.lazy(() => import("./LazyLoad.js"));
 const Youtube = React.lazy(() => import("./Youtube.js"));
 
@@ -174,7 +175,7 @@ function ProjectCard({ data }) {
   );
 }
 function ProjectCardVideo({ data }) {
-  let { title, subtitle, technology, url, github, live } = data;
+  let { title, subtitle, technology, url, github, live, youtube } = data;
   const classes = useStyles();
   return (
     <Card className={classes.projectCard}>
@@ -186,7 +187,7 @@ function ProjectCardVideo({ data }) {
         <Suspense
           fallback={<div style={{ backgroundColor: "white" }}>Loading...</div>}
         >
-          <Youtube url={url} />
+          <Youtube url={youtube} />
         </Suspense>
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
@@ -206,17 +207,26 @@ function ProjectCardVideo({ data }) {
         </CardContent>
       </CardActionArea>
       <CardActions className={classes.cardButton}>
-        <IconButton href={url} target="_blank">
-          {live && (
-            <Badge badgeContent={"LIVE"} color="secondary">
-              <LinkIcon />
-            </Badge>
-          )}
-          {!live && <LinkIcon />}
-        </IconButton>
-        <IconButton href={github} target="_blank">
-          <GitHubIcon />
-        </IconButton>
+        {url && (
+          <IconButton href={url} target="_blank">
+            {live && (
+              <Badge badgeContent={"LIVE"} color="secondary">
+                <LinkIcon />
+              </Badge>
+            )}
+            {!live && <LinkIcon />}
+          </IconButton>
+        )}
+        {github && (
+          <IconButton href={github} target="_blank">
+            <GitHubIcon />
+          </IconButton>
+        )}
+        {youtube && (
+          <IconButton href={youtube} target="_blank">
+            <YouTubeIcon />
+          </IconButton>
+        )}
       </CardActions>
     </Card>
   );
@@ -249,9 +259,9 @@ let cardData = {
     title: "My Portfolio",
     image: myPortfolioImage,
     subtitle:
-      "My personal portfolio website built using React JS and Material UI library.",
-    url: "https://myreward.web.app",
-    github: "https://github.com/darenwong/React-online-bridge-app",
+      "My personal portfolio website built using React JS and Material UI library. Mobile friendly and fully responsive design.",
+    url: "https://darenwong.github.io/portfolio/",
+    github: "https://github.com/darenwong/portfolio",
     technology: <>ReactJS &middot; Material UI</>,
     live: true,
   },
@@ -260,8 +270,10 @@ let cardData = {
     image: myPortfolioImage,
     subtitle:
       "This project turns your laptop screen into a VR display via head tracking using your webcam. Head tracking is achieved using Dlib's face detector and 3D image is rendered using OpenGL",
-    url: "https://www.youtube.com/embed/wFUVqaULVcY?controls=1&amp;start=15&mute=1",
-    github: "https://github.com/darenwong/React-online-bridge-app",
+    url: null,
+    youtube:
+      "https://www.youtube.com/embed/wFUVqaULVcY?controls=1&amp;start=15&mute=1",
+    github: "https://github.com/darenwong/VR-Display",
     technology: <>Python &middot; OpenCV &middot; OpenGL</>,
     live: false,
   },
@@ -270,8 +282,10 @@ let cardData = {
     image: myPortfolioImage,
     subtitle:
       "A robotic arm attached with a webcam that can track and follow a ball's position. Ball tracking is achieved using 2 PID controllers and ball detection is done using color detection algorithm in Python (OpenCV)",
-    url: "https://www.youtube.com/embed/O1YXzyCnVc4?controls=1&amp;start=3&mute=1",
-    github: "https://github.com/darenwong/React-online-bridge-app",
+    url: null,
+    youtube:
+      "https://www.youtube.com/embed/O1YXzyCnVc4?controls=1&amp;start=3&mute=1",
+    github: null,
     technology: <>Python &middot; OpenCV &middot; Arduino &middot; C++</>,
     live: false,
   },
@@ -280,9 +294,9 @@ let cardData = {
     image: myPortfolioImage,
     subtitle:
       "This was my MEng Final Year Project at University of Cambridge. The robot is driven by 4 flexible tendons controlled via PID controller.",
-    url: "https://www.youtube.com/embed/XxgpBG1PMLY?&mute=1",
-    github:
-      "https://sites.google.com/site/fulvioforni/lab/tendon-driven-robotic-elephant-trunk?authuser=0",
+    url: "https://sites.google.com/site/fulvioforni/lab/tendon-driven-robotic-elephant-trunk?authuser=0",
+    youtube: "https://www.youtube.com/embed/XxgpBG1PMLY?&mute=1",
+    github: null,
     technology: <>C++ &middot; VEX Robotics</>,
     live: false,
   },

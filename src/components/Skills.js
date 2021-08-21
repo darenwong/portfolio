@@ -1,9 +1,27 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Box, Typography, Paper, List, ListItem } from "@material-ui/core";
-import CodeIcon from "@material-ui/icons/Code";
-import DeveloperModeIcon from "@material-ui/icons/DeveloperMode";
-import StorageIcon from "@material-ui/icons/Storage";
+import { FaBootstrap, FaCode } from "react-icons/fa";
+import {
+  IoLogoJavascript,
+  IoLogoPython,
+  IoLogoPwa,
+  IoLogoReact,
+  IoLogoHtml5,
+  IoLogoCss3,
+  IoLogoNodejs,
+  IoLogoFirebase,
+} from "react-icons/io5";
+import {
+  SiMaterialUi,
+  SiPostgresql,
+  SiSocketDotIo,
+  SiTensorflow,
+  SiCplusplus,
+  SiArduino,
+  SiPowerbi,
+} from "react-icons/si";
+import { AiFillCode, AiFillDatabase } from "react-icons/ai";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -64,29 +82,30 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const frontend = [
-  { name: "HTML" },
-  { name: "CSS" },
-  { name: "React JS" },
-  { name: "Bootstrap" },
-  { name: "Material UI" },
+  { name: "HTML", logo: <IoLogoHtml5 /> },
+  { name: "CSS", logo: <IoLogoCss3 /> },
+  { name: "React JS", logo: <IoLogoReact /> },
+  { name: "Bootstrap", logo: <FaBootstrap /> },
+  { name: "Material UI", logo: <SiMaterialUi /> },
 ];
 const backend = [
-  { name: "Python" },
-  { name: "Javascript" },
-  { name: "Node JS" },
-  { name: "SQL/NoSQL" },
-  { name: "PostgreSQL" },
-  { name: "Firebase" },
-  { name: "WebSockets" },
+  { name: "Python", logo: <IoLogoPython /> },
+  { name: "Javascript", logo: <IoLogoJavascript /> },
+  { name: "Node JS", logo: <IoLogoNodejs /> },
+  { name: "SQL/NoSQL", logo: null },
+  { name: "PostgreSQL", logo: <SiPostgresql /> },
+  { name: "Firebase", logo: <IoLogoFirebase /> },
+  { name: "WebSockets", logo: <SiSocketDotIo /> },
 ];
 const datascience = [
-  { name: "Tensorflow" },
-  { name: "Pandas" },
-  { name: "OpenCV" },
-  { name: "C++" },
-  { name: "Arduino" },
-  { name: "MATLAB" },
-  { name: "Power BI" },
+  { name: "PWA", logo: <IoLogoPwa /> },
+  { name: "Tensorflow", logo: <SiTensorflow /> },
+  { name: "Pandas", logo: null },
+  { name: "OpenCV", logo: null },
+  { name: "C++", logo: <SiCplusplus /> },
+  { name: "Arduino", logo: <SiArduino /> },
+  { name: "MATLAB", logo: null },
+  { name: "Power BI", logo: <SiPowerbi /> },
 ];
 
 export default function Skills({ sref }) {
@@ -105,14 +124,21 @@ export default function Skills({ sref }) {
                 <Typography
                   variant="h6"
                   className={classes.iconContainer}
+                  color="primary"
                   paragraph
                 >
-                  <DeveloperModeIcon className={classes.icon} />
+                  <FaCode className={classes.icon} />
                   Front End
                 </Typography>
-                {frontend.map(({ name }, index) => (
+                {frontend.map(({ name, logo }, index) => (
                   <ListItem className={classes.listItem} key={index}>
-                    <Typography variant="subtitle2">{name}</Typography>
+                    {logo}
+                    <Typography
+                      variant="subtitle2"
+                      style={{ marginLeft: "10px" }}
+                    >
+                      {name}
+                    </Typography>
                   </ListItem>
                 ))}
               </List>
@@ -122,14 +148,21 @@ export default function Skills({ sref }) {
                 <Typography
                   variant="h6"
                   className={classes.iconContainer}
+                  color="primary"
                   paragraph
                 >
-                  <StorageIcon className={classes.icon} />
+                  <AiFillDatabase className={classes.icon} />
                   Back End
                 </Typography>
-                {backend.map(({ name }, index) => (
+                {backend.map(({ name, logo }, index) => (
                   <ListItem className={classes.listItem} key={index}>
-                    <Typography variant="subtitle2">{name}</Typography>
+                    {logo}
+                    <Typography
+                      variant="subtitle2"
+                      style={{ marginLeft: "10px" }}
+                    >
+                      {name}
+                    </Typography>
                   </ListItem>
                 ))}
               </List>
@@ -139,15 +172,22 @@ export default function Skills({ sref }) {
                 <Typography
                   variant="h6"
                   className={classes.iconContainer}
+                  color="primary"
                   paragraph
                 >
-                  <CodeIcon className={classes.icon} />
+                  <AiFillCode className={classes.icon} />
                   Others
                 </Typography>
 
-                {datascience.map(({ name }, index) => (
+                {datascience.map(({ name, logo }, index) => (
                   <ListItem className={classes.listItem} key={index}>
-                    <Typography variant="subtitle2">{name}</Typography>
+                    {logo}
+                    <Typography
+                      variant="subtitle2"
+                      style={{ marginLeft: "10px" }}
+                    >
+                      {name}
+                    </Typography>
                   </ListItem>
                 ))}
               </List>

@@ -22,7 +22,6 @@ function App() {
   const contactRef = useRef(null);
 
   const scrollToSection = (ref) => {
-    console.log("hello", ref);
     switch (ref) {
       case "hello":
         helloRef.current.scrollIntoView({ behavior: "smooth" });

@@ -42,12 +42,18 @@ export default function TopBar({ scrollToSection }) {
     <div className={classes.root}>
       <AppBar position="fixed">
         <Toolbar className={classes.toolBar}>
-          <Typography style={{ fontWeight: 600 }} color="primary" gutterBottom>
-            D
-          </Typography>
-          <Typography style={{ fontWeight: 600 }} color="primary">
-            W
-          </Typography>
+          <Button onClick={() => scrollToSection("hello")}>
+            <Typography
+              style={{ fontWeight: 600 }}
+              color="primary"
+              gutterBottom
+            >
+              D
+            </Typography>
+            <Typography style={{ fontWeight: 600 }} color="primary">
+              W
+            </Typography>
+          </Button>
           <TemporaryDrawer
             scrollToSection={scrollToSection}
             drawerOpen={drawerOpen}
@@ -60,7 +66,6 @@ export default function TopBar({ scrollToSection }) {
             aria-label="text primary button group"
             className={classes.buttonGroup}
           >
-            <Button onClick={() => scrollToSection("hello")}>Home</Button>
             <Button onClick={() => scrollToSection("about")}>About</Button>
             <Button onClick={() => scrollToSection("skills")}>Skills</Button>
             <Button onClick={() => scrollToSection("experience")}>
