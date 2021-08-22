@@ -14,7 +14,7 @@ import {
   Collapse,
 } from "@material-ui/core";
 import BridgeImage from "../image/bridge.JPG";
-import myRewardImage from "../image/myReward.JPG";
+import myRewardImage from "../image/myReward2.JPG";
 import myPortfolioImage from "../image/portfolio.JPG";
 import LinkIcon from "@material-ui/icons/Link";
 import GitHubIcon from "@material-ui/icons/GitHub";
@@ -181,7 +181,7 @@ function ProjectCardVideo({ data }) {
     <Card className={classes.projectCard}>
       <CardActionArea
         className={classes.CardActionArea}
-        href={url}
+        href={url || youtube}
         target="_blank"
       >
         <Suspense
@@ -249,7 +249,7 @@ let cardData = {
     subtitle:
       "A loyalty webapp and digital rewards platform. It allows merchants to set up and manage a digital loyalty program by giving customers redeemable stamps digitally via QR code scan. App is a PWA that is installable and works offline.",
     url: "https://myreward.web.app",
-    github: "https://github.com/darenwong/React-online-bridge-app",
+    github: "https://github.com/darenwong/myReward",
     technology: (
       <>ReactJS &middot; Firebase &middot; Material UI &middot; PWA</>
     ),

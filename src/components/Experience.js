@@ -132,10 +132,8 @@ function getSteps() {
           <ListItem>
             <Typography variant="subtitle2" color="textSecondary" align="left">
               Co-Author of the final research paper submitted to the{" "}
-              <span style={{ fontWeight: 600 }}>
-                AIAA “SciTech” conference (January 2019)
-              </span>
-              .
+              <span style={{ fontWeight: 600 }}>AIAA “SciTech” conference</span>{" "}
+              on January 2019.
             </Typography>
           </ListItem>
         </List>
