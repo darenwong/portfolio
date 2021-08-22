@@ -5,8 +5,8 @@
     "static/js/1.31acdba5.chunk.js": "/portfolio/static/js/1.31acdba5.chunk.js",
     "static/js/1.31acdba5.chunk.js.map": "/portfolio/static/js/1.31acdba5.chunk.js.map",
     "main.css": "/portfolio/static/css/main.85a4b78b.chunk.css",
-    "main.js": "/portfolio/static/js/main.07497af2.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.07497af2.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.df918579.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.df918579.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.5b9ff300.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.5b9ff300.js.map",
     "static/js/4.7b133d92.chunk.js": "/portfolio/static/js/4.7b133d92.chunk.js",
@@ -21,7 +21,7 @@
     "static/media/Petronas.a0fa9198.png": "/portfolio/static/media/Petronas.a0fa9198.png",
     "static/media/Sagentia.cd891a9e.png": "/portfolio/static/media/Sagentia.cd891a9e.png",
     "static/media/bridge.03942af8.JPG": "/portfolio/static/media/bridge.03942af8.JPG",
-    "static/media/myReward.a4465859.JPG": "/portfolio/static/media/myReward.a4465859.JPG",
+    "static/media/myReward2.dde83b62.JPG": "/portfolio/static/media/myReward2.dde83b62.JPG",
     "static/media/portfolio.341808fb.JPG": "/portfolio/static/media/portfolio.341808fb.JPG",
     "static/media/profile_pic.74828092.jpg": "/portfolio/static/media/profile_pic.74828092.jpg",
     "static/media/unilogo.c363878f.jpg": "/portfolio/static/media/unilogo.c363878f.jpg"
@@ -30,6 +30,6 @@
     "static/js/runtime-main.5b9ff300.js",
     "static/js/4.7b133d92.chunk.js",
     "static/css/main.85a4b78b.chunk.css",
-    "static/js/main.07497af2.chunk.js"
+    "static/js/main.df918579.chunk.js"
   ]
 }
