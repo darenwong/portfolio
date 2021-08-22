@@ -113,21 +113,29 @@ function getSteps() {
         <List>
           <ListItem>
             <Typography variant="subtitle2" color="textSecondary" align="left">
-              Built a CNN in Python and Tensorflow based on the YOLO algorithm
-              to detect the location, size and orientation of 2D vortices in 2D
-              velocity vector field. Wrote CV algorithms for data augmentation.
+              Built a{" "}
+              <span style={{ fontWeight: 600 }}>
+                CNN in Python and Tensorflow
+              </span>{" "}
+              based on the YOLO algorithm to detect the location, size and
+              orientation of 2D vortices in 2D velocity vector field. Wrote CV
+              algorithms for data augmentation.
             </Typography>
           </ListItem>
           <ListItem>
             <Typography variant="subtitle2" color="textSecondary" align="left">
               Built a CNN to detect corner flow separation in turbine blades.
-              Model achieved up to 99% accuracy.
+              Model achieved{" "}
+              <span style={{ fontWeight: 600 }}>99% accuracy</span>.
             </Typography>
           </ListItem>
           <ListItem>
             <Typography variant="subtitle2" color="textSecondary" align="left">
-              Co-Author of the final research paper submitted to the AIAA
-              “SciTech” conference (January 2019).
+              Co-Author of the final research paper submitted to the{" "}
+              <span style={{ fontWeight: 600 }}>
+                AIAA “SciTech” conference (January 2019)
+              </span>
+              .
             </Typography>
           </ListItem>
         </List>
@@ -150,7 +158,11 @@ function getSteps() {
           <ListItem>
             <Typography variant="subtitle2" color="textSecondary" align="left">
               Wrote and ran extensive medical test protocols for a medical
-              software with 2000+ software requirements.
+              software with{" "}
+              <span style={{ fontWeight: 600 }}>
+                2000+ software requirements
+              </span>
+              .
             </Typography>
           </ListItem>
           <ListItem>
@@ -178,21 +190,27 @@ function getSteps() {
         <List>
           <ListItem>
             <Typography variant="subtitle2" color="textSecondary" align="left">
-              Developed data pipeline with ETL and API developers for PETRONAS
-              C-Suite Dashboards, including EVP, VP, and CEO. Dashboard was
-              featured during EVP Townhall, attended by 1000+ employees.
+              Developed data pipeline with ETL and API developers for PETRONAS{" "}
+              <span style={{ fontWeight: 600 }}>C-Suite Dashboards</span>, which
+              are used weekly by EVP, VP, and CEO. Dashboard was featured during
+              EVP Townhall, attended by{" "}
+              <span style={{ fontWeight: 600 }}>1000+ employees</span>.
             </Typography>
           </ListItem>
           <ListItem>
             <Typography variant="subtitle2" color="textSecondary" align="left">
-              Built end-to-end data pipeline from various data sources including
-              Plant Sensors (PI AF), PostgreSQL, REST API, Sharepoint List and
-              Excel to 10+ end user applications and Power BI.
+              Built end-to-end data pipeline from various data sources including{" "}
+              <span style={{ fontWeight: 600 }}>
+                Plant Sensors (PI AF), PostgreSQL, REST API, Sharepoint List and
+                Excel
+              </span>{" "}
+              to more than 10 end user applications and Power BI.
             </Typography>
           </ListItem>
           <ListItem>
             <Typography variant="subtitle2" color="textSecondary" align="left">
-              Implemented Data Governance practices for 10 digital applications
+              Implemented Data Governance practices for{" "}
+              <span style={{ fontWeight: 600 }}>10 digital applications</span>{" "}
               based on international data management standards and practices
               (DAMA-DMBOK), with focus on Data Quality, Master Data and Metadata
               management.

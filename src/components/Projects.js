@@ -237,7 +237,7 @@ let cardData = {
     title: "Floating Bridge",
     image: BridgeImage,
     subtitle:
-      "An online platform for users to connect and play Bridge together. Supports multiplayer game with Chat features",
+      "An online platform for users to connect and play Bridge together. Supports multiplayer game with online chat features.",
     url: "https://floating-bridge-app.netlify.app/",
     github: "https://github.com/darenwong/React-online-bridge-app",
     technology: <>ReactJS &middot; NodeJS &middot; WebSocket</>,
@@ -247,7 +247,7 @@ let cardData = {
     title: "MyReward",
     image: myRewardImage,
     subtitle:
-      "A loyalty webapp and digital rewards platform. It allows merchants to set up and manage a digital loyalty program by giving customers redeemable stamps digitally via QR code scan",
+      "A loyalty webapp and digital rewards platform. It allows merchants to set up and manage a digital loyalty program by giving customers redeemable stamps digitally via QR code scan. App is a PWA that is installable and works offline.",
     url: "https://myreward.web.app",
     github: "https://github.com/darenwong/React-online-bridge-app",
     technology: (
@@ -269,7 +269,7 @@ let cardData = {
     title: "VR Display",
     image: myPortfolioImage,
     subtitle:
-      "This project turns your laptop screen into a VR display via head tracking using your webcam. Head tracking is achieved using Dlib's face detector and 3D image is rendered using OpenGL",
+      "This project turns your laptop screen into a VR display via head tracking using your webcam. Head tracking is achieved using Dlib's face detector and 3D image is rendered using OpenGL.",
     url: null,
     youtube:
       "https://www.youtube.com/embed/wFUVqaULVcY?controls=1&amp;start=15&mute=1",
@@ -281,7 +281,7 @@ let cardData = {
     title: "Object Tracking Robot",
     image: myPortfolioImage,
     subtitle:
-      "A robotic arm attached with a webcam that can track and follow a ball's position. Ball tracking is achieved using 2 PID controllers and ball detection is done using color detection algorithm in Python (OpenCV)",
+      "A robotic arm attached with a webcam that can track and follow a ball's position. Ball tracking is achieved using 2 PID controllers and ball detection is done using color detection algorithm in Python (OpenCV).",
     url: null,
     youtube:
       "https://www.youtube.com/embed/O1YXzyCnVc4?controls=1&amp;start=3&mute=1",
@@ -293,7 +293,7 @@ let cardData = {
     title: "Robotic Elephant Trunk",
     image: myPortfolioImage,
     subtitle:
-      "This was my MEng Final Year Project at University of Cambridge. The robot is driven by 4 flexible tendons controlled via PID controller.",
+      "This was my MEng Final Year Project at University of Cambridge. The 2 DOF robot is driven by 4 flexible tendons controlled via PID controller, which allows it to traverse around foreign objects to reach the desired set point",
     url: "https://sites.google.com/site/fulvioforni/lab/tendon-driven-robotic-elephant-trunk?authuser=0",
     youtube: "https://www.youtube.com/embed/XxgpBG1PMLY?&mute=1",
     github: null,
