@@ -57,7 +57,7 @@ export default function Contact({ sref }) {
           color="primary"
           className={classes.button}
           startIcon={<EmailIcon />}
-          href="mailto:daren96123@gmail.com"
+          href="mailto:darenwkt@gmail.com"
         >
           Send Email
         </Button>
