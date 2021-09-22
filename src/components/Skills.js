@@ -20,7 +20,14 @@ import {
   SiCplusplus,
   SiArduino,
   SiPowerbi,
+  SiHeroku,
+  SiAuth0,
+  SiMysql,
+  SiCsharp,
+  SiGithub,
+  SiNetlify,
 } from "react-icons/si";
+import { AiFillApi } from "react-icons/ai";
 import { AiFillCode, AiFillDatabase } from "react-icons/ai";
 
 const useStyles = makeStyles((theme) => ({
@@ -92,10 +99,14 @@ const backend = [
   { name: "Python", logo: <IoLogoPython /> },
   { name: "Javascript", logo: <IoLogoJavascript /> },
   { name: "Node JS", logo: <IoLogoNodejs /> },
-  { name: "SQL/NoSQL", logo: null },
+  { name: "REST API", logo: <AiFillApi /> },
   { name: "PostgreSQL", logo: <SiPostgresql /> },
+  { name: "MySQL", logo: <SiMysql /> },
   { name: "Firebase", logo: <IoLogoFirebase /> },
   { name: "WebSockets", logo: <SiSocketDotIo /> },
+  { name: "Heroku", logo: <SiHeroku /> },
+  { name: "Netlify", logo: <SiNetlify /> },
+  { name: "Auth0", logo: <SiAuth0 /> },
 ];
 const datascience = [
   { name: "PWA", logo: <IoLogoPwa /> },
@@ -103,9 +114,11 @@ const datascience = [
   { name: "Pandas", logo: null },
   { name: "OpenCV", logo: null },
   { name: "C++", logo: <SiCplusplus /> },
+  { name: "C#", logo: <SiCsharp /> },
   { name: "Arduino", logo: <SiArduino /> },
   { name: "MATLAB", logo: null },
   { name: "Power BI", logo: <SiPowerbi /> },
+  { name: "Github", logo: <SiGithub /> },
 ];
 
 export default function Skills({ sref }) {

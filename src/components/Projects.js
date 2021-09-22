@@ -16,6 +16,7 @@ import {
 import BridgeImage from "../image/bridge.JPG";
 import myRewardImage from "../image/myReward2.JPG";
 import myPortfolioImage from "../image/portfolio.JPG";
+import gifvoteImage from "../image/gifvote.JPG";
 import LinkIcon from "@material-ui/icons/Link";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
@@ -233,6 +234,18 @@ function ProjectCardVideo({ data }) {
 }
 
 let cardData = {
+  gifvote: {
+    title: "GIF Vote",
+    image: gifvoteImage,
+    subtitle:
+      "A social media app where users can post GIF based poll for others to vote, like and comment. A library of more than 1000 GIFs, polls, likes, and comments.",
+    url: "https://gif-vote.netlify.app/",
+    github: "https://github.com/darenwong/GIFVote-web/tree/master",
+    technology: (
+      <>ReactJS &middot; NodeJS &middot; PostgreSQL &middot; REST API</>
+    ),
+    live: true,
+  },
   bridge: {
     title: "Floating Bridge",
     image: BridgeImage,
@@ -319,17 +332,20 @@ export default function Projects({ sref }) {
       <Box className={classes.container}>
         <Box className={classes.mainBox}>
           <Box className={classes.subBox}>
+            <ProjectCard data={cardData.gifvote} />
+          </Box>
+          <Box className={classes.subBox}>
             <ProjectCard data={cardData.bridge} />
           </Box>
           <Box className={classes.subBox}>
             <ProjectCard data={cardData.myReward} />
           </Box>
-          <Box className={classes.subBox}>
-            <ProjectCardVideo data={cardData.vrdisplay} />
-          </Box>
         </Box>{" "}
         <Collapse in={expanded} timeout="auto" unmountOnExit>
           <Box className={classes.mainBox}>
+            <Box className={classes.subBox}>
+              <ProjectCardVideo data={cardData.vrdisplay} />
+            </Box>
             <Box className={classes.subBox}>
               <ProjectCard data={cardData.myPortfolio} />
             </Box>

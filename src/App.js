@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import "./App.css";
 import TopBar from "./components/TopBar.js";
 import Hello from "./components/Hello.js";
@@ -9,6 +9,7 @@ import Projects from "./components/Projects.js";
 import Contact from "./components/Contact.js";
 import FadeInSection from "./components/FadeInSection.js";
 import smoothscroll from "smoothscroll-polyfill";
+import ReactGA from "react-ga4";
 
 // kick off the polyfill!
 smoothscroll.polyfill();
@@ -20,6 +21,11 @@ function App() {
   const experienceRef = useRef(null);
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
+
+  useEffect(() => {
+    ReactGA.initialize("G-X2GL3K2JP0");
+    ReactGA.send("pageview");
+  }, []);
 
   const scrollToSection = (ref) => {
     switch (ref) {
