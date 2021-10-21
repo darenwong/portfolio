@@ -26,6 +26,7 @@ import {
   SiCsharp,
   SiGithub,
   SiNetlify,
+  SiRedux,
 } from "react-icons/si";
 import { AiFillApi } from "react-icons/ai";
 import { AiFillCode, AiFillDatabase } from "react-icons/ai";
@@ -92,6 +93,7 @@ const frontend = [
   { name: "HTML", logo: <IoLogoHtml5 /> },
   { name: "CSS", logo: <IoLogoCss3 /> },
   { name: "React JS", logo: <IoLogoReact /> },
+  { name: "Redux", logo: <SiRedux /> },
   { name: "Bootstrap", logo: <FaBootstrap /> },
   { name: "Material UI", logo: <SiMaterialUi /> },
 ];

@@ -16,7 +16,7 @@ import {
 import BridgeImage from "../image/bridge.JPG";
 import myRewardImage from "../image/myReward2.JPG";
 import myPortfolioImage from "../image/portfolio.JPG";
-import gifvoteImage from "../image/gifvote.JPG";
+import gifvoteImage from "../image/gifvote2.JPG";
 import LinkIcon from "@material-ui/icons/Link";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
@@ -242,7 +242,10 @@ let cardData = {
     url: "https://gif-vote.netlify.app/",
     github: "https://github.com/darenwong/GIFVote-web/tree/master",
     technology: (
-      <>ReactJS &middot; NodeJS &middot; PostgreSQL &middot; REST API</>
+      <>
+        ReactJS &middot; NodeJS &middot; PostgreSQL &middot; REST API &middot;
+        Redux &middot; Auth0
+      </>
     ),
     live: true,
   },
